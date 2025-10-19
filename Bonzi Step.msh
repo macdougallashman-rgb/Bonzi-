@@ -1,0 +1,28 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Bonzi=Bonzi.acs
+
+[LanguageIDs]
+Bonzi=&H409
+
+[Script]
+Bonzi.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Bonzi.Show
+Bonzi.Speak "Well! Hello There!"
+Bonzi.Speak "I Can't Believe We've Been Properly Introduced."
+Bonzi.Speak "I'm Bonzi!"
+Bonzi.Speak "What's Your Name?"
+Bonzi.MoveTo 939, 183
+Bonzi.Speak "Nice To Meet You, Goodbye Windows XP!"
+Bonzi.Speak "Great! you Have To Sucessully To The Step!"
+Bonzi.Speak "Bye!"
+Bonzi.Hide
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

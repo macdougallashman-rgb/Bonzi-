@@ -1,0 +1,32 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Bonzi=Bonzi.acs
+Peedy=Peedy.acs
+
+[LanguageIDs]
+Bonzi=&H409
+Peedy=&H409
+
+[Script]
+Bonzi.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Bonzi.Show
+Bonzi.Speak "Ladies  And Gentlemen! Can You Please Welcome To Peedy!"
+Set Req = Bonzi.Hide()
+WaitFor Req
+Peedy.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Peedy.Show
+Peedy.Speak "Good Morning!"
+Peedy.Speak "Let's Sing!"
+Peedy.Speak "\Chr=""Monotone""\\Map=""\Pit=78\\Spd=130\Hi   Hi Hi Hi Hi Hi Hi \Pit=156\Hi  \Pit=78\Hi Hi""="""HI HI HI HI HI HI HI HI"\"
+Peedy.Speak "Thank You!"
+Peedy.Speak "Bye!"
+Peedy.Hide
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

@@ -1,0 +1,33 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Bonzi=Bonzi.acs
+
+[LanguageIDs]
+Bonzi=&H409
+
+[Script]
+Bonzi.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Bonzi.Show
+Bonzi.Speak "Help! Thiefs!"
+Bonzi.Speak "Whats The Problem?"
+Bonzi.Speak "My Bananas Are Gone!"
+Bonzi.Speak "Hmmmmm... I'm Sure This Was Done By The Gorila Thiefs."
+Bonzi.Speak "Let's Escape!"
+Bonzi.MoveTo 985, 295
+Bonzi.Speak "Your Under Arrest!"
+Bonzi.Speak "Go To Jail!"
+Bonzi.MoveTo 782, 230
+Bonzi.Speak "Thank You!"
+Bonzi.Speak "Your Welcome!"
+
+Bonzi.Speak "Let's Go To The Police Station! Bye!"
+Bonzi.Hide
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

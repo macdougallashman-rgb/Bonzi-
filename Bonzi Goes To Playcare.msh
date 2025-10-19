@@ -1,0 +1,34 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Bonzi=Bonzi.acs
+
+[LanguageIDs]
+Bonzi=&H409
+
+[Script]
+Bonzi.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Bonzi.Show
+Bonzi.Speak "Hi There!"
+Bonzi.Speak "Let's Ask Peedy!"
+Bonzi.Speak "\Chr=""Whisper""\Do You Wanna Play?"
+Bonzi.Speak "That's A Great Idea!"
+
+Bonzi.Speak "Let's Go!"
+Bonzi.Show
+Bonzi.MoveTo 1097, 221
+Bonzi.Speak "Were Here! Let's Get It!"
+Bonzi.Speak "Hahahahaha!"
+Bonzi.Speak "Time To Go!"
+Bonzi.MoveTo 1097, 221
+Bonzi.MoveTo 775, 186
+Bonzi.Speak "Let's Play Again Soon!"
+Bonzi.Hide
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

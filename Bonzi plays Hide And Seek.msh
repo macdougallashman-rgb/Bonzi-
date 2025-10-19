@@ -1,0 +1,25 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Bonzi=Bonzi.acs
+
+[LanguageIDs]
+Bonzi=&H409
+
+[Script]
+Bonzi.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Bonzi.Show
+Bonzi.Speak "1 2 3 4 5 6 7 8 9 10! Ready Or Not? Here I Come!"
+Bonzi.MoveTo 1298, 324
+Bonzi.Speak "I Found You!"
+Bonzi.MoveTo 712, 328
+Bonzi.Speak "Bye!"
+Bonzi.Hide
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

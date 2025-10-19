@@ -1,0 +1,34 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Peedy=Peedy.acs
+
+[LanguageIDs]
+Peedy=&H409
+
+[Script]
+Peedy.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Peedy.Show
+Peedy.Speak "Hello Again, Goodbye Windows XP. How Are You?"
+Peedy.Speak "Thanks For Putting Me In My Place."
+
+Peedy.MoveTo 1018, 275
+Peedy.Speak "Moving Is Always A Drag"
+Peedy.Hide
+Peedy.MoveTo 907, 244
+Peedy.MoveTo 903, 243
+Peedy.MoveTo 676, 804
+Peedy.MoveTo 490, 443
+Peedy.MoveTo 899, 189
+Peedy.MoveTo 979, 631
+Peedy.MoveTo 961, 299
+Peedy.MoveTo 963, 292
+Peedy.MoveTo -7, -66
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

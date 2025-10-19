@@ -1,0 +1,34 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Bonzi=Bonzi.acs
+
+[LanguageIDs]
+Bonzi=&H409
+
+[Script]
+Bonzi.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Bonzi.Show
+Bonzi.Speak "Hi! I'm Bonzi!"
+Bonzi.Speak "And Today Were Gonna Use Wordpress To Create A Website."
+Bonzi.Speak "First. Go To Hoststinger And Install Wordpress."
+Bonzi.Speak "There We Go! We Have Wordpress!"
+Bonzi.Speak "And Add Astra. To The Themes"
+Bonzi.Speak "First. We Upload A ZIP File."
+Bonzi.Speak "There We Go! We Have A Astra Theme."
+Bonzi.Speak "First. Click Elementor."
+Bonzi.Speak "Were Gonna Click A Template."
+Bonzi.Speak "Were Gonna Build A Webisite With Elementor"
+Bonzi.Speak "Click Publish"
+Bonzi.Speak "And There We Go! The Website Build!"
+Bonzi.Speak "Thanks For Watching!"
+Bonzi.Speak "Bye!"
+Bonzi.Hide
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

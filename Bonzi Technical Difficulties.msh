@@ -1,0 +1,23 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Bonzi=Bonzi.acs
+
+[LanguageIDs]
+Bonzi=&H409
+
+[Script]
+Bonzi.MoveTo 878, 269
+Bonzi.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Bonzi.Show
+Bonzi.Speak "Welcome To Bonzi! Annnnnnn"
+Bonzi.Speak "Oops! We Are Expercing Technical Difficuties. Somthing Went Wrong. Sorry About That. But Don't Worry. Your Friends For Bonzibuddy We'll Come Back And Eventually."
+Bonzi.Hide
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True

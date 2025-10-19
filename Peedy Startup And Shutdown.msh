@@ -1,0 +1,22 @@
+[MASH Script]
+Version=7.5
+
+[Characters]
+Char=
+
+[LanguageIDs]
+
+[Script]
+Char.TTSModeID = "{CA141FD0-AC7F-11D1-97A3-006008273001}"
+Char.Show
+Char.Speak "Hi I'm Peedy!"
+Char.Speak "Choose A App."
+Char.Speak "Bye! See You Soon!"
+Char.Hide
+
+[Commands]
+MenuName=MASH Menu
+ACO=Advanced Character Options|~|Advanced Character Options
+
+[CommandScript:ACO]
+AgentControl.PropertySheet.Visible = True
